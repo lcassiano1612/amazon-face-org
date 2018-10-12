@@ -12,8 +12,12 @@
     <header class="center-content">
       <div class="container">
         <div class="logotype">
-          <img src="assets/images/logo-amazonface.png">
+            <a href="#"><img src="assets/images/logo-amazonface.png"></a>
         </div>
+        <input id="menu" class="menu__checkbox" type="checkbox" hidden>
+        <label for="menu" class="menu-responsive">
+          <img src="assets/images/menu.svg">
+        </label>
         <nav class="navigation">
           <ul class="flex">
             <li><a href="#">Inicio</a></li>
@@ -28,12 +32,84 @@
       </div>
     </header>
     <div class="banner">
-      <img src="assets/images/banner1.jpg">
+        <div class="arrow-left" onClick="previousBanner()"><img src="assets/images/arrow.svg"></div>
+        <img active src="assets/images/banner1.jpg">
+        <img src="assets/images/banner2.jpg">
+        <img src="assets/images/banner3.jpg">
+        <div class="arrow-right" onClick="nextBanner()"><img src="assets/images/arrow.svg"></div>
     </div>
     <section class="content center-content">
       <div class="container">
         <h2 class="titulo">OBJETIVOS</h2>
+        <div class="container">
+          <ul class="list-goals">
+            <li>
+              <div class="icons-goals">
+                <img src="assets/images/co2.svg">
+              </div>
+              <h2>CO<sub>2</sub> elevado e resiliência da Floresta Amazônica</h2>
+              <p>A existência, a magnitude e a duração de um suposto efeito de fertilização de CO<sub>2</sub> nas florestas tropicais permanecem em grande parte indeterminadas.</p>
+              <a href="#">Ler mais</a>
+            </li>
+            <li>
+              <div class="icons-goals">
+                <img src="assets/images/co2.svg">
+              </div>
+              <h2>Impacto sócio-econômicos da mudança climática na Amazônia</h2>
+              <p>Uma degradação climática da floresta amazônica certamente incorrerá em custos para vários setores sócio-econômicos da região, como agricultura, energia e saúde.</p>
+              <a href="#">Ler mais</a>
+            </li>
+            <li>
+              <div class="icons-goals">
+                <img src="assets/images/co2.svg">
+              </div>
+              <h2>Links do AmazonFACE com políticas</h2>
+              <p>Informar a tomada de decisões e oferecer caminhos para o pensamento transversal em planos estratégicos de curto e longo prazo para conservação ambiental e manutenção de serviços ecossistêmicos na região amazônica.</p>
+              <a href="#">Ler mais</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
+    <section class="posts">
+      
+    </section>
+    <section class="project__phases center-content">
+      <div class="container">
+        <h2 class="titulo">FASES DO PROJETO</h2>
+      </div>
+    </section>
+    <section class="project__news center-content">
+      <div class="container">
+        <h2 class="titulo">ÚLTIMAS NOTÍCIAS</h2>
+        <div class="container">
+          <div class="news">
+            <div class="post__1__news">
+
+            </div>
+            <div class="group1__news">
+              <div class="group2__news">
+                <div class="post__3__news">
+
+                </div>
+                <div class="post__4__news">
+
+                </div>
+              </div>
+              <div class="post__2__news">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <img class="logo-footer" src="assets/images/logo-white.png">
+      <p>Avaliando os efeitos do aumento de CO<sub>2</sub> na resiliência da floresta amazônica.</p>
+      <img class="support-footer" src="assets/images/apoios.png">
+      <p class="copyright-footer">Copyright © AmazonFace 2018.</p>
+    </footer>
+    <script src="assets/app.js"></script>
   </body>
 </html>
