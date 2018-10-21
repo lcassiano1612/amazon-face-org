@@ -5,7 +5,7 @@
   $telefone = $_POST['telefone'];
   $mensagem = $_POST['mensagem'];
 
-  echo "$nome $email $telfone $mensagem";
+  echo "$nome $email $telefone $mensagem";
 
 
 ?>
