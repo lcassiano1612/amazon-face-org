@@ -83,7 +83,7 @@ a {
   }
   .banner > img {
     width: 100%;
-  }
+  }conta
   .background2 {
     background: #f7f7fa;
   }
@@ -281,16 +281,26 @@ a {
     width: 1170px;
     margin-bottom: 100px;
   }
-  .center-pages> img {
-    width: 1170px;
+  .center-pages > .titulo-equipes > img, .center-pages > .titulo-programa > img {
+    width: 100%;
     margin-top: 50px;
   }
-  .center-pages > h1 {
+  .center-pages  h1 {
     font-size: 24px;
     color: #777;
     margin: 80px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .center-pages > p {
+  .center-pages > h1 > img {
+    margin: 0 10px 0 0px;
+  }
+  .center-pages i {
+    font-size: 14pt;
+    text-decoration: underline;
+  }
+  .center-pages > p, .center-pages > div > p {
     font-size: 14px;
     line-height: 26px;
     color: #848484;
@@ -298,6 +308,76 @@ a {
     padding-top: 16px;
     letter-spacing: .8px;
     font-family: 'Open Sans', sans-serif;
+  }
+  .center-pages > div {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+  }
+  .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contato > form{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+  }
+  .contato > form > input {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    margin: 15px 0 0 0;
+    outline: 0;
+  }
+  .contato > form > input:focus {
+    border: 1px solid #008938;
+  }
+  .contato > form > textarea {
+    border: 1px solid #e5e5e5;
+    margin: 15px 0 0 0;
+    padding: 20px;
+    border-radius: 8px;
+    height: 150px;
+    outline: 0;
+  }
+  .contato > form > textarea:focus {
+    border: 1px solid #008938;
+  }
+  .contato > form > button {
+    border: 1px solid #008938;
+    padding: 15px 0;
+    background: #008938;
+    color: #fff;
+    border-radius: 8px;
+    margin: 15px 0 0 0;
+  }
+  .address {
+    display: flex;
+  }
+  .address > address {
+    font-size: 14px;
+    line-height: 26px;
+    color: #848484;
+    font-weight: 400;
+    padding-top: 16px;
+    letter-spacing: .8px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .publicacoes {
+    margin-top: 100px;
+  }
+  .publicacoes > div {
+    flex-direction: column;
+    padding: 0px 30px;
+    display: flex;
+    align-items: normal;
+  }
+  .titulo-equipes {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -319,7 +399,6 @@ a {
 @media screen and (max-width: 1024px) {
   .container {
     width: 100%;
-    padding: 0 30px;
   }
   .arrow-left {
     margin: 0 0 0 30px;
@@ -332,6 +411,18 @@ a {
   }
   .support-footer {
     width: 900px;
+  }
+  .center-pages > p {
+    padding: 0 30px;
+  }
+  .center-pages > div {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    flex-direction: column;
+  }
+  .img-contexto {
+    margin-top: 100px;
   }
 }
 
@@ -359,6 +450,7 @@ a {
     position: relative;
     transition: 0.3s;
     opacity: 1;
+    margin: 0 10px 0 0;
   }
   .menu-responsive > img{
     width: 50px;
@@ -387,6 +479,17 @@ a {
 }
 
 @media screen and (max-width: 425px) {
+  div.titulo-equipes {
+    display: none;
+  }
+  div.titulo-programa {
+    display: none;
+  }
+  .center-pages h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 14pt;
+  }
   .banner > .arrow-left, .banner > .arrow-right {
     position: absolute;
     top: 150px;
@@ -394,5 +497,43 @@ a {
   }
   .support-footer {
     display: none;
+  }
+  .banner-pages {
+    background: url(../assets/images/about-header.jpg) center;
+    height: 200px;
+    color: #fff;
+    font-size: 22pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-pages > h2 {
+    font-size: 24pt;
+  }
+  .contato > form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .address > address {
+    text-align: center;
+  }
+  .contato > form > input {
+    margin: 15px;
+  }
+  .contato > form > textarea {
+    margin: 15px;
+  }
+  .contato > form > button {
+    margin: 15px;
+  }
+  .footer > p {
+    text-align: center;
+  }
+  .img-contexto {
+    display: none;
+  }
+  h1.titulo-caracter-especial {
+    display: inherit;
   }
 }
