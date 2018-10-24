@@ -88,7 +88,6 @@ a {
   .banner {
     margin: -110px 0 0 0;
     overflow: hidden;
-    height: 800px;
   }
   .container-banner {
     width: var(--screen_xxl);
