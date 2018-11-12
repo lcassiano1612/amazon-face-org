@@ -33,6 +33,7 @@ $status = mail($email_to, $subject, $corpo, $headers);
 //enviando o email.
 
 if ($status) {
+  echo $status;
   echo "<script> alert('Formulário enviado com sucesso!'); </script>";
   
 //mensagem de form enviado com sucesso.
