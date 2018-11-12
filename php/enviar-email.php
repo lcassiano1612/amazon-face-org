@@ -33,10 +33,7 @@ $status = mail($email_to, $subject, $corpo, $headers);
 //enviando o email.
 
 if ($status) {
-  echo $status;
-  echo "<script> alert('Formulário enviado com sucesso!'); </script>";
-  
-//mensagem de form enviado com sucesso.
+  header('location: ', 'http://www.amazon-face.org/email-enviado.php')
 
 } else {
   echo "<script> alert('Falha ao enviar o Formulário.'); </script>";
