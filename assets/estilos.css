@@ -38,6 +38,11 @@ a {
   justify-content: center;
 }
 
+.flex-column {
+  flex-direction: column;
+  margin: 0 0 30px 0;
+}
+
 .controls {
   z-index: 1050;
   position: fixed;
@@ -320,6 +325,9 @@ a {
     justify-content: center;
     align-items: center;
   }
+  .center-text > div {
+    display: block !important;
+  }
   .center-pages {
     margin: 0 auto;
     width: 1170px;
@@ -329,7 +337,7 @@ a {
     width: 100%;
     margin-top: 50px;
   }
-  .center-pages  h1 {
+  .center-pages h1 {
     font-size: 24px;
     color: #777;
     margin: 80px 0 0 0;
