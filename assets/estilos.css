@@ -25,7 +25,7 @@ a {
 
 :root {
   --screen_xxl: 1600px;
-  --screen_xl:  1340px;
+  --screen_xl:  1220px;
   --screen_l:   1024px;
   --screen_m:   768px;
   --screen_s:   640px;
@@ -134,6 +134,7 @@ a {
   }
   .project__phases ul {
     display: flex;
+    justify-content: center;
   }
   .project__phases ul > li {
     text-align: center;
@@ -450,6 +451,20 @@ a {
   .banner > .arrow-left > img, .banner > .arrow-right > img {
     width: 60px;
   }
+  .project__phases ul > li {
+    width: 182px;
+  }
+  .list-goals > li {
+    width: 285px;
+  }
+  .list-goals > li > h2 {
+    font-size: 13pt;
+  }
+  .carousel-caption > h5 {
+    font-size: 42px;
+    margin: 0;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -531,6 +546,30 @@ a {
   }
   .support-footer {
     width: 600px;
+  }
+  .carousel-caption > h5 {
+    font-size: 32px;
+    margin: 0;
+  }
+  .list-goals {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-goals > li {
+    width: 285px;
+    margin: 0 0 90px 0;
+  }
+  .project__phases ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project__phases ul > li {
+    width: 182px;
+    margin: 0 0 20px 0;
   }
 }
 
